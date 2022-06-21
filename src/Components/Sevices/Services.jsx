@@ -17,7 +17,7 @@ const Services = () => {
         <span style={{ color: darkMode ? "white" : "" }}>My </span>
         <span>Fields</span>
         <span>
-          .Net, C#, Java
+          .Net, Node.js, Java
           <br />
           Angular, React, Vue, HTML-CSS, JS, Jquery
         </span>
@@ -36,7 +36,11 @@ const Services = () => {
           whileInView={{ left: "14rem" }}
           transition={transition}
         >
-          <Card emoji={HeartEmaoji} heading={"Backend"} detail={".Net"} />
+          <Card
+            emoji={HeartEmaoji}
+            heading={"Backend"}
+            detail={".Net, Node.js, Java"}
+          />
         </motion.div>
 
         <motion.div

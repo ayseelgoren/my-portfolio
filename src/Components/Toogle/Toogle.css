@@ -1,21 +1,21 @@
-.toogle{
-    display: flex;
-    justify-content: space-between;
-    border: 3px solid var(--orange);
-    border-radius: 1rem;
-    position: relative;
-    padding: 2px;
-    cursor: pointer;
+.toogle {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid var(--blue);
+  border-radius: 1rem;
+  position: relative;
+  padding: 2px;
+  cursor: pointer;
 }
 
-.toogle>*{
-    width: 1rem;
-    height: 1rem;
-    color: var(--orange);
+.toogle > * {
+  width: 1rem;
+  height: 1rem;
+  color: var(--blue);
 }
 
-.t-button{
-    border-radius: 100%;
-    background: var(--orange);
-    position: absolute;
+.t-button {
+  border-radius: 100%;
+  background: var(--blue);
+  position: absolute;
 }

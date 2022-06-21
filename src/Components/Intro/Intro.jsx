@@ -36,7 +36,6 @@ const Intro = () => {
           >
             <LinkedIn color="#92B4EC" size="7rem" />
           </a>
-          {/* <img src={Instagram} alt="" /> */}
         </div>
       </div>
       <div className="i-right">
@@ -55,17 +54,6 @@ const Intro = () => {
           src={glassesimoji}
           alt=""
         />
-        {/* <motion.div
-          initial={{ top: "-15%", left: "74%" }}
-          whileInView={{ left: "68%" }}
-          transition={transition}
-          style={{ top: "-4%", left: "68%" }}
-          className="floating-div"
-        >
-          <FloatingDiv image={Crown} txt1="Software" txt2="Engineering" />
-        </motion.div> */}
-
-        {/* blur divs*/}
         <div className="blur" style={{ backgroud: "rgb(238 210 255)" }}></div>
         <div
           className="blur"

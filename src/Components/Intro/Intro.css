@@ -1,146 +1,153 @@
-.intro{
-    display: flex;
-    height: 77vh;
-    margin-top: 6rem;
+.intro {
+  display: flex;
+  height: 77vh;
+  margin-top: 6rem;
 }
 
-.i-left{
-    display: flex;
-    position: relative;
-    flex: 1;
+.i-left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.i-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.i-name > :nth-child(1) {
+  color: black;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.i-name > :nth-child(2) {
+  color: var(--blue);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.i-name > :nth-child(3) {
+  color: gray;
+  font-weight: 100;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.i-button {
+  width: 6rem;
+  height: 2rem;
+}
+
+.i-icons {
+  margin-top: 3rem;
+  display: flex;
+  gap: 0rem;
+}
+
+.i-icons > * {
+  transform: scale(0.5);
+}
+
+.i-icons > *:hover {
+  cursor: pointer;
+}
+
+.i-right {
+  flex: 1;
+  position: relative;
+}
+
+.i-right > * {
+  position: absolute;
+  z-index: 1;
+}
+
+.i-right > :nth-child(1) {
+  transform: scale(0.69);
+  left: -15%;
+  top: -9%;
+}
+
+.i-right > :nth-child(2) {
+  left: -4.6rem;
+  transform: scale(0.67);
+  top: -3rem;
+}
+
+.i-right > :nth-child(3) {
+  left: 28%;
+}
+
+.i-right > :nth-child(4) {
+  transform: scale(0.6);
+  top: -19%;
+  left: -24%;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(72px);
+  z-index: -9;
+  top: 18%;
+  left: 56%;
+}
+
+@media screen and (max-width: 480px) {
+  .intro {
     flex-direction: column;
-    gap: 2rem
-}
-
-.i-name{
-    display: flex;
-    flex-direction: column;
-}
-
-.i-name>:nth-child(1){
-    color: black;
-    font-weight: bold;
-    font-size: 3rem;
-}
-
-.i-name>:nth-child(2){
-    color: var(--orange);
-    font-weight: bold;
-    font-size: 3rem;
-}
-
-.i-name>:nth-child(3){
-    color: gray;
-    font-weight: 100;
-    font-size: 14px;
-    margin-top: 10px;
-}
-
-.i-button{
-    width: 6rem;
-    height: 2rem;
-}
-
-.i-icons{
-    margin-top: 3rem;
-    display: flex;
-    gap: 0rem
-}
-
-.i-icons>*{
-    transform: scale(0.5);
-}
-
-.i-icons>*:hover{
-    cursor: pointer;
-}
-
-.i-right{
-    flex: 1;
-    position: relative;
-}
-
-.i-right>*{
-    position: absolute;
-    z-index: 1;
-}
-
-.i-right>:nth-child(1){
-    transform: scale(0.69);
-    left: -15%;
-    top: -9%;
-}
-
-.i-right>:nth-child(2){
-    left: -4.6rem;
-    transform: scale(0.67);
-    top: -3rem;
-}
-
-.i-right>:nth-child(3){
-    left: 28%;
-}
-
-.i-right>:nth-child(4){
-    transform: scale(0.6);
-    top: -19%;
-    left: -24%;
-    border-radius: 50%;
-    padding: 0;
-}
-
-.blur{
-    position: absolute;
-    width: 22rem;
-    height: 14rem;
-    border-radius: 50%;
-    background: #edd0ff;
-    filter: blur(72px);
-    z-index: -9;
-    top: 18%;
-    left: 56%;
-}
-
-@media screen and (max-width:480px) {
-    .intro{
-        flex-direction: column;
-        height: 64rem;
-        gap:7rem
-    }
-    .i-right{
-        transform: scale(0.8);
-        left:-3rem;
-    }
-    .i-right .blue{
-        display: none;
-    }
-    .floating-div:nth-of-type(1){
-        top:-7rem !important
-    }
+    height: 64rem;
+    gap: 7rem;
+  }
+  .i-right {
+    transform: scale(0.8);
+    left: -3rem;
+  }
+  .i-right .blue {
+    display: none;
+  }
+  .floating-div:nth-of-type(1) {
+    top: -7rem !important;
+  }
 }
 
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
-    color: black;
-    font-family: monospace;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid var(--orange); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(30, end),
-      blink-caret .5s step-end infinite;
+  color: black;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid var(--blue); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
   }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+  to {
+    width: 100%;
   }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: var(--orange) }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
   }
+  50% {
+    border-color: var(--blue);
+  }
+}
