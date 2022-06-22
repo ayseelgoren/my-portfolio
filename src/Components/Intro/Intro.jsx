@@ -1,15 +1,19 @@
 import React, { useContext } from "react";
-import "./Intro.css";
+import { themeContext } from "../../Context";
+import { motion } from "framer-motion";
+
 import LinkedIn from "@iconscout/react-unicons/icons/uil-linkedin";
 import Github from "@iconscout/react-unicons/icons/uil-github";
 import girl from "../../img/women-web-developer-with-laptop.png";
 import glassesimoji from "../../img/glassesimoji.png";
-import { themeContext } from "../../Context";
-import { motion } from "framer-motion";
+
+import "./Intro.css";
+
 const Intro = () => {
   const transition = { duration: 2, type: "spring" };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+
   return (
     <div className="intro">
       <div className="i-left">
@@ -17,7 +21,7 @@ const Intro = () => {
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
           <span>Ayşe Elgören</span>
           <div class="typewriter">
-            <h1>Software Enginnering</h1>
+            <h1>Software Engineer</h1>
           </div>
         </div>
         <button className="button i-button">Hire me</button>

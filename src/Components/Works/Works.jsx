@@ -1,13 +1,14 @@
 import React, { useContext } from "react";
 import { themeContext } from "../../Context";
+
 import "./Works.css";
 
 const Works = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+
   return (
     <div className="works" id="Works">
-      {/* left side */}
       <div className="awesome">
         <span style={{ color: darkMode ? "white" : "" }}>Programming</span>
         <span> Languages & Tools</span>
@@ -119,7 +120,6 @@ const Works = () => {
             />
           </p>
         </span>
-        <button className="button s-button">Download CV</button>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
     </div>

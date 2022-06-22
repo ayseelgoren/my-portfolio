@@ -1,11 +1,11 @@
 import React from "react";
-import "./Footer.css";
 
-// import Insta from "@iconscout/react-unicons/icons/uil-instagram";
 import LinkedIn from "@iconscout/react-unicons/icons/uil-linkedin";
 import Github from "@iconscout/react-unicons/icons/uil-github";
-
 import Wave from "../../img/wave2.png";
+
+import "./Footer.css";
+
 const Footer = () => {
   return (
     <div className="footer">
@@ -13,9 +13,20 @@ const Footer = () => {
       <div className="f-content">
         <span style={{ marginBottom: "-3%" }}>ayseelgoren@gmail.com</span>
         <div className="f-icons">
-          {/* <Insta color="white" size="3rem" /> */}
-          <LinkedIn color="white" size="3rem" />
-          <Github color="white" size="3rem" />
+          <a
+            href="https://github.com/ayseelgoren"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Github color="white" size="3rem" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ay%C5%9Fe-elg%C3%B6ren/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <LinkedIn color="white" size="3rem" />
+          </a>
         </div>
       </div>
     </div>

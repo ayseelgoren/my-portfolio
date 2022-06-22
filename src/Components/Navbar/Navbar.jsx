@@ -1,8 +1,10 @@
 //rafce
+import { Link } from "react-scroll";
 import React from "react";
 import Toogle from "../Toogle/Toogle";
+
 import "./Navbar.css";
-import { Link } from "react-scroll";
+
 const Navbar = () => {
   return (
     <div className="n-wrapper">

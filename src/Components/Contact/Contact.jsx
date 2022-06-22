@@ -1,17 +1,17 @@
 import React, { useContext, useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
-import "./Contact.css";
 import { themeContext } from "../../Context";
+import emailjs from "@emailjs/browser";
+
+import "./Contact.css";
 
 const Contact = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   const form = useRef();
   const [done, setDone] = useState(false);
+
   const sendEmail = (e) => {
     e.preventDefault();
-
-    console.log(e.target[1].value);
     emailjs
       .sendForm(
         "service_b8yeazn",
@@ -19,21 +19,15 @@ const Contact = () => {
         form.current,
         "LP_5junhyX8JzF24q"
       )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setDone(true);
-          e.target[0].value = "";
-          e.target[1].value = "";
-          e.target[2].value = "";
-          setTimeout(() => {
-            setDone(false);
-          }, 2000);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+      .then((result) => {
+        setDone(true);
+        e.target[0].value = "";
+        e.target[1].value = "";
+        e.target[2].value = "";
+        setTimeout(() => {
+          setDone(false);
+        }, 2000);
+      });
   };
 
   return (
@@ -48,7 +42,6 @@ const Contact = () => {
           ></div>
         </div>
       </div>
-
       <div className="c-right">
         <form ref={form} onSubmit={sendEmail}>
           <input
