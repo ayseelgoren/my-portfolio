@@ -1,6 +1,3 @@
-# Live Link
-
-https://classy-crostata-e4ecb7.netlify.app/
 
 # Screean Shot
 
