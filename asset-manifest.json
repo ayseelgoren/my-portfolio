@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ayseelgoren/static/css/main.e539c06a.css",
+    "main.js": "/ayseelgoren/static/js/main.923639ef.js",
+    "static/media/women-web-developer-with-laptop.png": "/ayseelgoren/static/media/women-web-developer-with-laptop.a080ecd1a117e1e75070.png",
+    "static/media/resume.pdf": "/ayseelgoren/static/media/resume.d59401587df7bff145a6.pdf",
+    "static/media/glassesimoji.png": "/ayseelgoren/static/media/glassesimoji.a08bdab12e8eb56a6874.png",
+    "static/media/weather-app.png": "/ayseelgoren/static/media/weather-app.733b3a94d0b70a068f4e.png",
+    "static/media/todos.png": "/ayseelgoren/static/media/todos.a778e60797242f0a86ee.png",
+    "static/media/rentcar.png": "/ayseelgoren/static/media/rentcar.16ddf9c004459ddb5497.png",
+    "static/media/scrum.png": "/ayseelgoren/static/media/scrum.60cb6598611a253b16f5.png",
+    "static/media/humble.png": "/ayseelgoren/static/media/humble.c8b32b53675e68978981.png",
+    "static/media/heartemoji.png": "/ayseelgoren/static/media/heartemoji.26b1b6ed5e0e44083b28.png",
+    "index.html": "/ayseelgoren/index.html",
+    "main.e539c06a.css.map": "/ayseelgoren/static/css/main.e539c06a.css.map",
+    "main.923639ef.js.map": "/ayseelgoren/static/js/main.923639ef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e539c06a.css",
+    "static/js/main.923639ef.js"
+  ]
+}
